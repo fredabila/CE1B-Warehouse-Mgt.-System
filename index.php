@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warehouse Management System</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
-    <div class="banner">
-        <div class="navbar">
-            <img src="images/image2.png" class="logo">
-            <ul id="dropdownclick" class="topnav">
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li class="dropdown"><a href="javascript:void(0);" onclick="dropdownmenu()">&#9776;</a></li>
-            </ul>
-        </div>
 
+<body>
+
+    <div class="banner">
+        <?php include 'include/header.php'; ?>
     </div>
     <div class="content">
         <h1>WAREHOUSE MANAGEMENT SYSTEM</h1>
@@ -30,7 +21,7 @@
             <button type="button"><span></span>PICK AND PACK</button>
         </div>
     </div>
-    
+
 
 
 
@@ -38,14 +29,14 @@
 
     <script>
         function dropdownmenu() {
-            var x =document.getElementById("dropdownclick");
-            if (x.className === "topnav"){
+            var x = document.getElementById("dropdownclick");
+            if (x.className === "topnav") {
                 x.className += " responsive";
-                // change topnav to topnav.responsive
-            }else{
+            } else {
                 x.className = "topnav";
             }
         }
     </script>
 </body>
+
 </html>
