@@ -59,6 +59,13 @@ $result = mysqli_query($conn, $query);
                                             |
                                             <a class="btn btn-danger text-white"
                                                 href="functions/delete.php?Del=<?php echo $ItemID; ?>">Delete</a>
+                                            |
+                                            <a class="btn btn-info text-white"
+                                                href="ship.php?GetID=<?php echo $ItemID; ?>">Ship</a>
+                                            |
+                                            <a class="btn btn-info text-white"
+                                                href="track.php?GetID=<?php echo $ItemID; ?>">Track Shipping</a>
+
                                         </td>
                                     </tr>
                                     <?php
