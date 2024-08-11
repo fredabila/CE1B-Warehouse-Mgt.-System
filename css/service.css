@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.service {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.title h2 {
+    color: black;
+    font-size: 75px;
+    width: 90%;
+    max-width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 400px;
+}
+
+.card {
+    height: 400px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: blue;
+}
+
+h5 {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button {
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+.contact {
+    width: 100%;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact p {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.contact .button-two {
+    background-color: blue;
+    color: #101010;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.contact .button-two:hover {
+    background-color: transparent;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    color: blue;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    color: #fff;
+    font-size: 17px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: blue;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+}
+
+.end {
+    position: absolute;
+    color: blue;
+    bottom: 35px;
+    font-size: 14px;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+    .title h2 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .service {
+        padding: 70px 0;
+    }
+
+    .title h2 {
+        font-size: 50px;
+    }
+
+    .card {
+        height: auto;
+        width: 90%;
+        max-width: 335px;
+        margin: 15px auto;
+    }
+
+    .pra p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title h2 {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .contact p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .service {
+        padding: 50px 0;
+    }
+
+    .title h2 {
+        font-size: 35px;
+        width: 100%;
+    }
+
+    .card {
+        padding: 15px 20px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    .pra p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .contact p {
+        font-size: 20px;
+    }
+
+    footer p:nth-child(1) {
+        font-size: 25px;
+    }
+
+    footer p:nth-child(2) {
+        font-size: 15px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title h2 {
+        font-size: 30px;
+    }
+
+    .card {
+        padding: 10px 15px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    .pra p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .contact p {
+        font-size: 18px;
+    }
+
+    .contact .button-two {
+        padding: 7px 20px;
+    }
+
+    footer p:nth-child(1) {
+        font-size: 20px;
+    }
+
+    footer p:nth-child(2) {
+        font-size: 14px;
+    }
+
+    .end {
+        font-size: 12px;
+    }
+}

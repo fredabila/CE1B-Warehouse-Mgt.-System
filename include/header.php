@@ -7,7 +7,7 @@ session_start();
     <ul id="dropdownclick" class="topnav">
         <li><a href="/">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="service.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
         <?php if (isset($_SESSION['username'])): ?>
             <li><a href="dashboard.php">Dashboard</a></li>
